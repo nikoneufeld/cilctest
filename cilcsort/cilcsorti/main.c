@@ -127,7 +127,7 @@ int main (int argc, const char * argv[])
     gettimeofday(&ts, NULL);
     sort(x, 0, n-1);
     gettimeofday(&te, NULL);
-    printf("icc seq %ld us\n", (te.tv_sec * 1000000 + te.tv_usec - ts.tv_sec * 1000000 - ts.tv_usec));
+    printf("icc seq  %ld us\n", (te.tv_sec * 1000000 + te.tv_usec - ts.tv_sec * 1000000 - ts.tv_usec));
     if (n < 40) {
         printf("\n");
         for (i = 0; i < n; printf("%d, ", x[i++]));
